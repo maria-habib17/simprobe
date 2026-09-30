@@ -1,0 +1,35 @@
+Experiment 002 primary measurement artifact
+
+File:
+experiment-002-primary-measurements.csv
+
+SHA-256:
+3538FA569F6857F5E9616FB2CD52B1E58A547FD645AB1F8963707251FC485B07
+
+Rows:
+240 data rows
+
+Conditions:
+C0 = 120
+C1 = 120
+
+Per condition:
+related = 24
+control = 96
+
+Frozen fixture commit:
+b18db86d96b0fae428cb886dcf75294610c1e409
+
+Frozen measurement specification commit:
+b9b92bea5fb253c236a6106440d56366d60d9efb
+
+Frozen comparison engine commit:
+9ba4eb24c3a13b57c8dc4c03eb54bbe43c2e602b
+
+Frozen primary runner commit:
+7c258b45324c47b0c596b64de44b316c4a98b125
+
+Reproducibility:
+A second independent invocation of the frozen primary runner produced a
+byte-for-byte identical CSV and the same SHA-256 hash before this record was
+created.
