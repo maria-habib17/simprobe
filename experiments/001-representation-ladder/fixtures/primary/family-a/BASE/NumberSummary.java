@@ -3,36 +3,58 @@ import java.util.Scanner;
 public class NumberSummary {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int n = scanner.nextInt();
-        int first = scanner.nextInt();
+        int[] values = readValues(scanner, n);
 
-        int sum = first;
-        int min = first;
-        int max = first;
-        int even = first % 2 == 0 ? 1 : 0;
+        System.out.println("sum=" + sum(values));
+        System.out.println("min=" + min(values));
+        System.out.println("max=" + max(values));
+        System.out.println("even=" + countEven(values));
+    }
 
-        for (int i = 1; i < n; i++) {
-            int value = scanner.nextInt();
+    private static int[] readValues(Scanner scanner, int n) {
+        int[] values = new int[n];
+        for (int i = 0; i < n; i++) {
+            values[i] = scanner.nextInt();
+        }
+        return values;
+    }
 
-            sum += value;
+    private static int sum(int[] values) {
+        int result = 0;
+        for (int value : values) {
+            result += value;
+        }
+        return result;
+    }
 
-            if (value < min) {
-                min = value;
-            }
-
-            if (value > max) {
-                max = value;
-            }
-
-            if (value % 2 == 0) {
-                even++;
+    private static int min(int[] values) {
+        int result = values[0];
+        for (int value : values) {
+            if (value < result) {
+                result = value;
             }
         }
+        return result;
+    }
 
-        System.out.println("sum=" + sum);
-        System.out.println("min=" + min);
-        System.out.println("max=" + max);
-        System.out.println("even=" + even);
+    private static int max(int[] values) {
+        int result = values[0];
+        for (int value : values) {
+            if (value > result) {
+                result = value;
+            }
+        }
+        return result;
+    }
+
+    private static int countEven(int[] values) {
+        int result = 0;
+        for (int value : values) {
+            if (value % 2 == 0) {
+                result++;
+            }
+        }
+        return result;
     }
 }
