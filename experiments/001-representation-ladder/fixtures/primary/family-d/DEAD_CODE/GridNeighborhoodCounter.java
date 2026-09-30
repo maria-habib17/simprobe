@@ -62,4 +62,7 @@ public class GridNeighborhoodCounter {
         return row + 1 < rows
                 && grid[row + 1].charAt(column) == '1';
     }
+    private static int unusedArea(int rows, int columns) {
+        return rows * columns;
+    }
 }

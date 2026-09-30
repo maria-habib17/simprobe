@@ -57,4 +57,7 @@ public class NumberSummary {
         }
         return result;
     }
+    private static int unusedDifference(int left, int right) {
+        return left - right;
+    }
 }

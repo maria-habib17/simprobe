@@ -30,4 +30,7 @@ public class RunLengthEncoder {
     private static void appendRun(StringBuilder result, char value, int count) {
         result.append(value).append(count);
     }
+    private static boolean unusedEmptyCheck(String text) {
+        return text.isEmpty();
+    }
 }

@@ -42,4 +42,7 @@ public class WordProfile {
         }
         return longest;
     }
+    private static String unusedUppercase(String text) {
+        return text.toUpperCase();
+    }
 }
