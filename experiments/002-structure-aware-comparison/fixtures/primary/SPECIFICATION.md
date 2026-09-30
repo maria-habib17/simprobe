@@ -229,7 +229,7 @@ Expected output:
 `words=3`
 `characters=13`
 `longest=6`
-`sameStart=1`
+`sameStart=2`
 
 #### B2
 
