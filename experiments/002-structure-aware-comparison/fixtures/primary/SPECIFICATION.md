@@ -306,7 +306,7 @@ Expected output:
 `runs=3`
 `longest=3`
 `changes=2`
-`weighted=50`
+`weighted=42`
 
 #### C2
 
