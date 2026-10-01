@@ -67,7 +67,7 @@ Expected: words=3; shortest=3; longest=5; even=1
 
 Input: Java makes tools useful
 
-Expected: words=4; shortest=4; longest=6; even=3
+Expected: words=4; shortest=4; longest=6; even=2
 
 ### B3
 
