@@ -61,9 +61,11 @@ They remain part of the benchmark census but are outside this balanced primary s
 
 Observed census counts using these strata:
 
+Correction note: the initial metadata census reported 14,081 Type-3 pairs at SIMILARITY_TOKEN >= 0.90. That query omitted the frozen upper-bound condition SIMILARITY_TOKEN < 1.00. A pre-selection boundary check found 386 Type-3 pairs with SIMILARITY_TOKEN = 1.00. Therefore the corrected VST3_90_100 count is 13,695, and those 386 exact-1.00 Type-3 pairs are outside the six-stratum primary sampling universe.
+
 - TYPE1: 48,116
 - TYPE2: 4,234
-- VST3_90_100: 14,081
+- VST3_90_100: 13,695
 - ST3_70_90: 161,662
 - MT3_50_70: 2,535,847
 - WT3_T4_0_50: 5,820,213
